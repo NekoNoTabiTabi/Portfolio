@@ -131,22 +131,7 @@ padding-bottom: 2px;
    
     height: 85%;
 }
-#closeButton img {
-    width: 15px;
-    height: 15px;
-    float: right;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.columnContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 0px;
-}
-
-.leftColumn, .rightColumn {
+.work .leftColumn, .rightColumn {
     width: 50%;
     height: 25vh;
     padding: 20px;
@@ -157,14 +142,80 @@ padding-bottom: 2px;
     align-items: flex-start;
 }
 
-.leftColumn h2, .rightColumn h2 {
+.work .leftColumn h2, .rightColumn h2 {
     margin-top: 1px;
     margin-bottom: 0;
     font-size: 2em;
     color: #333;
 }
 
-.leftColumn p, .rightColumn p {
+.work .leftColumn p, .rightColumn p {
+    margin-top: 1px;
+    margin-bottom: 0;
+    font-size: 1em;
+    color: #333;
+    background-color: #fbdecb;
+    padding: 5px;
+}
+
+.work .contentContainer  {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 5px ;
+    gap: 5px;
+}
+#closeButton img {
+    width: 15px;
+    height: 15px;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.columnContainer {
+    display: flex;
+
+
+}
+.work .columnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #666;
+    
+}
+
+.work .leftColumn, .rightColumn {
+    width: 50%;
+    height: 30vh;
+    padding: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: flex-start;
+    
+}
+.aboutMe .leftColumn {
+    padding-right: 5%;
+    align-items: flex-end;
+    
+}
+.aboutMe .leftColumn h2, .rightColumn h2 {
+    margin-top: 1px;
+    margin-bottom: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.aboutMe.leftColumn p, .rightColumn p {
     margin-top: 1px;
     margin-bottom: 0;
     font-size: 1em;
@@ -211,4 +262,93 @@ padding-bottom: 2px;
     border-radius: 5px;
     
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.overflowContainer {
+    padding-top: 0px;
+    width: 100%;
+    height: 70%;
+    overflow-y: hidden;
+}
+
+.aboutMe .overflowContainer{
+ height: 35.8vh;   
+ padding-top: 0px
+}
+.aboutMe .overflowContainer .textContainer{
+  text-align: left;
+  padding-top: 00px;
+  font-size: 1em;
+  color: #333;
+    margin-top: 0px;
+}
+
+.aboutMe .columnContainer {
+    height: 30VH;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid #666;
+    margin-bottom: 0px;
+
+}
+.aboutMe .leftColumn, .rightColumn {
+    width: 50%;
+    height: 25vh;
+    padding: 20px;
+    box-sizing: border-box;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom:0px ;
+
+}
+.aboutMe .rightColumn  {
+    padding-left: 0px;
+    align-items: left;
+    
+    justify-content: flex-end;
+    
+}
+.aboutMe .leftColumn  {
+    margin-left: 0px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.aboutMe .contentContainer img {
+ width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  margin: 0%; 
+  padding: 0;
+  box-shadow: #333 1PX 4px 8px rgba(0, 0, 0, 0.1);
+}
+.aboutMe .mainBoxContent  {
+     height: 75%;
+    }
+.aboutMe .textContainer {
+    text-align: left;
+    padding: 10px;
+  
+    font-size: 1em;
+    color: #333;
+    margin: 20px;
+    
+}
+.aboutMe .textContainer p {    
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+    margin: 20px;
+}
+.aboutMe .textContainer h2 {    
+    padding: 10px;
+   
+    
+    margin: 20px;
 }
