@@ -297,19 +297,25 @@ color: black;
     margin-top: 0px;
     margin-bottom: 10px;
 }
+.workContainer h2{
+   font-size: 2em;
+   margin-bottom: 0px;
+}
 .workTextContainer {
     margin-top: 1px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-    align-items: wrap;
-    justify-content: left;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0px;
+    
+
 }
 .workTextContainer h1 {
     margin-top: 0px;
     margin-bottom: 10px;
+    
 }
 .project p{
     font-size: small;
@@ -319,21 +325,39 @@ color: black;
 
 }
 .project{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
     margin: 20px;
     padding:10px ;
     text-align: center;
-    width: 50wh;
+    width: 50%;
     height: 50vh;
     background-color: #fbdecb;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-
+.work .project {
+    width: 40px; /* Adjust width to account for gap */
+    min-width: 300px; /* Set a minimum width */
+    height: auto; /* Let height adjust to content */
+    margin: 10px;
+    padding: 15px;
+}
 .project img {
-    max-width: 75%;
+    max-width: 100%;
     margin-bottom: 10px;
-    max-height: 75%;
+    max-height: 100%;
     border-radius: 5px;
     
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work .project .imgContainer {
+    height: 180px; /* Fixed height for images */
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden; /* Ensure images don't overflow */
 }
 .overflowContainer {
     padding-top: 0px;
