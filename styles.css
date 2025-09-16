@@ -1,34 +1,52 @@
 * { 
-font-family: 'Lato', sans-serif ;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #1B3C53;
-    height: 20%;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+  position: relative; /* Added for proper positioning */
+}
 
+/* New rule for background images */
+body > img {          
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Ensures image covers entire screen */
+  z-index: -1; /* Places it behind other content */
 }
-body img{          
-width: 100vw;
-height: 100%;
-}
+
 .mainContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100vh;
-    width: 100vw;
-    background-color: #1B3C53;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  position: relative; /* Added for proper layering */
 }
-.backgroundContainer {
 
-    height: 40vh;
-    width: 100vw;
-    background-color: #D2C1B6;
+/* Rest of your existing CSS remains unchanged */
+.backgroundContainer {
+  height: 40vh;
+  width: 100vw;
+  background-color: #D2C1B6;
+}
+
+.mainBoxContent {
+  width: 75%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:#F9EAE1 ;
+  border-radius: 1px;
+  text-align: center;
+  z-index: 5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .mainBoxContent {
@@ -165,7 +183,7 @@ padding-bottom: 2px;
 /*Work.html*/
 .work .mainBoxContent {
    
-    height: 85%;
+    height: 75%;
 }
 .work .leftColumn, .rightColumn {
     width: 50%;
@@ -233,6 +251,7 @@ padding-bottom: 2px;
     padding: 10px;
     box-sizing: border-box;
     border-bottom: 1px #666;
+    border-top: none;
     display: flex;
     flex-direction: column;
     justify-content: normal;
@@ -304,7 +323,7 @@ color: black;
 .overflowContainer {
     padding-top: 0px;
     width: 100%;
-    height: 70%;
+    height: 60%;
     overflow-y: hidden;
 }
 
