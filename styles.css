@@ -363,7 +363,7 @@ color: black;
     padding-top: 0px;
     width: 100%;
     height: 45vh;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 .aboutMe .overflowContainer{
@@ -379,48 +379,27 @@ color: black;
   
 }
 
-.aboutMe .columnContainer {
+.aboutMe .upperContainer {
     height: 30VH;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
+    align-items: center;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
     border-bottom: 1px solid #666;
     margin-bottom: 0px;
 
 
 }
-.aboutMe .leftColumn, .rightColumn {
-    width: 50%;
-    height: 25vh;
-    padding: 20px;
-    box-sizing: border-box;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-bottom:0px ;
-
-}
-.aboutMe .rightColumn  {
-    padding-left: 0px;
-    align-items: left;
-    
-    justify-content: flex-end;
-    
-}
-.aboutMe .leftColumn  {
-    margin-left: 0px;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-end;
-    
+.aboutMe .pictureContainer  {
+margin-left: 50px;
+  
 }
 
 .aboutMe .pictureContainer img {
- width: 170px;
+  
+  width: 170px;
   height: 170px;
   border-radius: 100%;
   margin: 0%; 
@@ -439,24 +418,25 @@ color: black;
     margin: 20px;
     
 }
-.aboutMe .rightColumn  {
-    padding-left: 0%;
-    
-}
-.aboutMe .rightColumn h2 {
-    font-size: 1.5em;
+.aboutMe .upperContainer .textContainer h2 {
+    font-size: 2.5em;
     margin: 0px;
     padding: 0px;
     color: #333;
 }
-.aboutMe .rightColumn h3 {
-    font-size: 1.0em;
+.aboutMe .upperContainer .textContainer h3 {
+    font-size: 2.0em;
     margin: 0px;
     padding: 0px;
     padding-bottom: 40PX;
     color: #333;
     font-weight: lighter;
 
+}
+.aboutMe .upperContainer .textContainer{
+
+justify-content: center ;   
+padding-top: 25px; 
 }
 .aboutMe .textContainer p {    
     padding: 10px;
