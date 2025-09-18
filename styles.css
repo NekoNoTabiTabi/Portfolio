@@ -193,19 +193,19 @@ background: rgb(182, 180, 180);
   padding: 5px;
   border-radius: 8px;
 }
-.contactContainer a {
-  text-decoration: none;
-  font-size: 1.5em;       /* makes emojis/icons bigger */
-  background: #2C2C2C;    /* dark background */
-  color: white;
-  padding: 8px 12px;
-  border-radius: 50%;
-  transition: transform 0.2s ease, background 0.3s ease;
+.contactContainer a img {
+  width: 35px;        /* icon size */
+  height: 35px;
+  border-radius: 50%; /* makes them circular */
+  background: #ffffff;
+  padding: 10px;
   margin: 10px;
+  transition: transform 0.2s ease, background 0.3s ease;
 }
-.contactContainer a:hover {
+
+.contactContainer a img:hover {
   transform: scale(1.2);
-  background: crimson;    /* highlight color */
+  background: crimson; /* hover effect */
 }
 .contactContainer p{
     font-size: 1.2em;
@@ -219,7 +219,7 @@ background: rgb(182, 180, 180);
 /*Work.html*/
 .work .mainBoxContent {
    
-    height: 75%;
+    height: 70%;
 }
 .work .leftColumn, .rightColumn {
     width: 50%;
@@ -411,7 +411,7 @@ color: black;
 }
 
 .aboutMe .overflowContainer{
- height: 35.8vh;   
+ height: 32.6vh;   
  padding-top: 0px
 }
 .aboutMe .overflowContainer .textContainer{
@@ -451,10 +451,10 @@ color: black;
   border-radius: 100%;
   margin: 0%; 
   padding: 0;
-  shad
+  
 }
 .aboutMe .mainBoxContent  {
-     height: 75%;
+     height: 70%;
     }
 .aboutMe .textContainer {
     text-align: left;
