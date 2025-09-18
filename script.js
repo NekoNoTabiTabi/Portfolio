@@ -6,14 +6,14 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const stars = [];
-const numStars = 120; // how many stars
+const numStars = 1000; // how many stars
 
 // create stars
 for (let i = 0; i < numStars; i++) {
   stars.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
-    radius: Math.random() * 3,  // star size
+    radius: Math.random() * 2,  // star size
     alpha: Math.random(),       // brightness
     fade: Math.random() * 0.02  // twinkle speed
   });
