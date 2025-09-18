@@ -1,7 +1,15 @@
 * { 
   font-family: 'Lato', sans-serif;
 }
-
+#starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* keep it behind background image & content */
+  
+}
 body {
   margin: 0;
   padding: 0;
