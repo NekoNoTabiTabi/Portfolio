@@ -13,7 +13,7 @@ for (let i = 0; i < numStars; i++) {
   stars.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
-    radius: Math.random() * 2,  // star size
+    radius: Math.random() * 3,  // star size
     alpha: Math.random(),       // brightness
     fade: Math.random() * 0.02  // twinkle speed
   });
